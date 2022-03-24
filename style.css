@@ -1,0 +1,79 @@
+.container {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px 60px;
+  border-radius: 1%;
+}
+.header {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #5c4d4d;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 40px;
+  text-shadow: 4px 13px 10px rgba(92, 77, 77, 0.2);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 10px 10px 59px 10px rgba(92, 77, 77, 0.2);
+  border-radius: 3%;
+}
+
+.recipe {
+  padding: 20px;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.ingredients {
+  font-size: 25px;
+}
+
+.process {
+  text-align: justify;
+}
+
+.importantWords {
+  color: #915b4a;
+  font-weight: bold;
+}
+a {
+  color: #5c4d4d;
+}
+
+.share {
+  text-align: center;
+  font-size: 20px;
+  color: #5c4d4d;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 0.2rem;
+  box-shadow: 10px 10px 59px 10px rgba(92, 77, 77, 0.2);
+  background-color: #a96851;
+  color: #f2f1e7;
+  border: 1px;
+  transition: all 200ms ease-in-out;
+  opacity: 1;
+}
+
+.buy:hover {
+  background-color: #f2f1e7;
+  color: #a96851;
+  border: 1px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+}
