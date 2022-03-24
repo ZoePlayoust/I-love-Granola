@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I ♥️ granola</title>
+    <style>
+      .container {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        border-radius: 1%;
+      }
+      .header {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: #5c4d4d;
+        font-weight: lighter;
+      }
+
+      h1 {
+        font-size: 40px;
+        text-shadow: 4px 13px 10px rgba(92, 77, 77, 0.2);
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        box-shadow: 10px 10px 59px 10px rgba(92, 77, 77, 0.2);
+        border-radius: 3%;
+      }
+
+      .recipe {
+        padding: 20px;
+        line-height: 24px;
+        font-size: 18px;
+      }
+
+      .ingredients {
+        font-size: 25px;
+      }
+
+      .process {
+        text-align: justify;
+      }
+
+      .importantWords {
+        color: #915b4a;
+        font-weight: bold;
+      }
+      a {
+        color: #5c4d4d;
+      }
+
+      .share {
+        text-align: center;
+        font-size: 20px;
+        color: #5c4d4d;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 0.2rem;
+        box-shadow: 10px 10px 59px 10px rgba(92, 77, 77, 0.2);
+        background-color: #a96851;
+        color: #f2f1e7;
+        border: 1px;
+        transition: all 200ms ease-in-out;
+        opacity: 1;
+      }
+
+      .buy:hover {
+        background-color: #f2f1e7;
+        color: #a96851;
+        border: 1px;
+        opacity: 0.7;
+        cursor: pointer;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Granola is yummy!</h1>
+
+        <h2><em>Especially if you make it!</em></h2>
+
+        <br />
+      </div>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/026/191/original/top-view-of-muesli-with-oranges-in-glass.jpg?1643723713"
+        alt="Granola"
+        width="300"
+        title="Granola is yummy!"
+      />
+      <div class="recipe">
+        <p class="ingredients"><strong>Ingredients</strong></p>
+
+        <ul>
+          <li>300 g of flakes (oats, rice, wheat, ...)</li>
+          <li>300 g of oleaginous fruits (almond, hazelnut, wholenut, ...)</li>
+          <li>200 g of dry fruits (apricots, mango, sultanas, ...)</li>
+          <li>100 g of chocolate chips</li>
+          <li>125 ml of fruit juice</li>
+          <li>2 tablespoons of olive oil</li>
+        </ul>
+
+        <hr />
+
+        <p class="process">
+          Mix the <span class="importantWords">flakes</span> and the
+          <span class="importantWords">oleaginous fruits</span> cut into small
+          chunks. Mix with the <span class="importantWords">olive oil</span> and
+          <span class="importantWords">fruit juice</span>. Stir well and bake in
+          thin layers 40 minutes at 150°C. After 20 minutes stir the mix to
+          avoid burning the top. When baked let it cool down and then mix with
+          your <span class="importantWords">dry fruits</span> and
+          <span class="importantWords">chocolate</span>. You can store your
+          granola in jars and keep it for a couple of weeks.
+        </p>
+      </div>
+
+      <button class="buy">Buy some ingredients! 🛒</button>
+
+      <p class="share">
+        <a href="https://padlet.com/playoustz/dm1eei27ep491plu" target="blank">
+          Share your recipe! 🥰</a
+        >
+      </p>
+      <br />
+      <p class="footer">
+        Coded with ♥️ by
+        <a
+          href="https://www.linkedin.com/in/zo%C3%A9-playoust-467b68116/"
+          target="blank"
+          alt="find me :)"
+          >Zoé Playoust</a
+        >.
+      </p>
+    </div>
+
+    <script>
+      let buyButton = document.querySelector("button");
+
+      function buyIngredients() {
+        let name = prompt("What is your name ?");
+        let country = prompt("In which country do you live ?");
+        let email = prompt("What is your email ?");
+        country = country.toLowerCase().trim();
+
+        if (country === "france") {
+          alert(
+            "🌟Bonjour🌟 " +
+              name +
+              ", merci pour ton email 😁, nous te contacterons prochainement! En attendant visite notre section share recipe pour trouver de l'inspiration!  🥰"
+          );
+        } else {
+          alert(
+            "Hello " +
+              name +
+              ", thank your for your email! 😁 We'll be in touch soon to give you a list of the best stores in " +
+              country +
+              "! In the meantime, check our share your recipe section to get inspiration! 🥰 "
+          );
+        }
+      }
+
+      buyButton.addEventListener("click", buyIngredients);
+    </script>
+  </body>
+</html>
